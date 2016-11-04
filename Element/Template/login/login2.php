@@ -1,13 +1,4 @@
-<?php
-	require('../../../Controller/Controlfile/logicpath.php');
-	//require('../../../Controller/filepackage.php');
-	require($Logicfile);
 
- sendform("login","login.php")
-//echo $Myfile;
-//echo $Myfolder;
-//echo $Logicpath;
-?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -16,7 +7,8 @@
 <title>メインページ</title>
 <link rel="stylesheet" href="../components/css/original/master.css">
 <link rel="stylesheet" href="../components/css/font-awesome.min.css">
-<script src="main.js"></script>
+
+<script type="text/javascript" src="../../components/js/gethtml.js"></script>
 </head>
 <body>
 <header style="background-color:#66ccff;">
@@ -27,7 +19,7 @@
   <div width=100%>
     <div style="margin-top:10px;padding-top:30px;background-color:#ECF0F1" id=registerform>
   <!--    <form action="../../Template/login/login.php" method="post">-->
-	 <form action=<?php sendform("login","login.php") ?> method="post">
+	 <form id="formlogin" method="post">
       	<!-- Email -->
         <div align=center>
           <input type="text" class="form-control" name="email" id="email" placeholder="メールアドレス" value="<?php echo htmlspecialchars($_POST['email']);?>"/>
@@ -45,7 +37,7 @@
             <?php endif; ?>
         </div>
         <div class="loginpage">
-          <input value="ログイン" type="submit" style="color:white">
+          <input value="ログイン" type="submit" onclick=formaction("formlogin","Login","Login2.php"); style="color:white">
         </div>
         <!--checkbox -->
         <div >

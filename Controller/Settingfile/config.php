@@ -4,6 +4,6 @@
 
 const PUBLIC_KEY = "test_public_7nC4qSbUc8kp6gx2QWeuP0sk";
 const SECRET_KEY = "test_secret_8rF8CH3NJ8jC8tG0Bl2jL1Gy";
-//echo "コンフィグだよ";
+echo "コンフィグだよ";
 
 ?>

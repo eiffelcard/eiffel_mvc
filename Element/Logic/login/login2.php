@@ -25,13 +25,13 @@ echo $_POST['password'];
 	$record=mysqli_query($db,$sql)or die(mysqli_error($db));
 	if($table=mysqli_fetch_assoc($record)){
 
- viewpath("eiffel","mainmenu.php");
-	//header('Location:'.$viewpath);
+ changepage("mainmenu.php");
+//	header('Location:'.$viewpath);
 
-	header('Location: mainmenu.php');
+	//header('Location: mainmenu.php');
 }
 }}
 
-echo "Logicfile";
-
+echo "Logicfile2です";
+	require($Templatefile);
 ?>

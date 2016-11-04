@@ -4,7 +4,7 @@ $key = 'T0jFY1KE7vECee+KlEuqPFiJginQDcb63rDfbvUdn4XFQR0VuRB2DFt+7PYzq+C+VvJMZcuP
 //
 
 //確認用
-//echo "エンクリプト！";
+echo "エンクリプト！";
 
 function decript(){
 
